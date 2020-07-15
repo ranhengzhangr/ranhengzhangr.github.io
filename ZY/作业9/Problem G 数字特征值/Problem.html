@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<!-- saved from url=(0103)http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/problem.php?cid=1606&pid=6 -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../img/favicon.ico">
+
+    <title>
+        HBMZUOJ </title>
+
+
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="./Problem_files/bootstrap.min.css">
+
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="./Problem_files/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./Problem_files/hoj.css">
+    <link rel="stylesheet" href="./Problem_files/katex.min.css">
+    <link rel="stylesheet" href="./Problem_files/mathjax.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    	<script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.js"></script>
+    	<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  	<![endif]-->
+    <script language="javascript" type="text/javascript" src="./Problem_files/jquery.min.js.下载"></script>
+</head>
+
+<body>
+    <div class="page">
+        <center>
+            <table style="width:100%;">
+                <tbody>
+                    <tr>
+                        <td style="text-align:left;color:red">Hubei Minzu University Online Judge(程序设计类课程作业和实验)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </center>
+
+        <center>
+            <table class="menu" style="background-color:#e9eef1">
+                <tbody>
+                    <tr>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/index.php">首页</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/work.php?cid=1606">题目</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/status.php?cid=1606">状态</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/contestrank.php?cid=1606">排名</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/conteststatistics.php?cid=1606">统计</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/bbs.php?cid=1606">提问</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/work-program-score.php?cid=1606">成绩</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/sim.php?cid=1606">相似度检查</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </center>
+
+
+        <center>
+            <div style="width:90%;text-align:left">
+                <div class="panel-heading">
+                    <center>
+                        <h3>Problem G: 数字特征值</h3><span class="green">Time Limit: </span>1 Sec &nbsp;&nbsp; <span class="green">Memory Limit: </span>128 MB<br><span class="green">Total Submissions:
+                        </span>235 &nbsp;&nbsp; <span class="green">Accepted: </span>170 &nbsp;&nbsp; <span class="green">Creator: </span><span id="creator">Imported</span>
+                    </center>
+                </div>
+                <!--StartMarkForVirtualJudge-->
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Problem Description</div>
+                    <div class="panel-body content">
+                        <p>
+                            对数字求特征值是常用的编码算法，奇偶特征是一种简单的特征值。对于一个整数，从个位开始对每一位数字编号，个位是1号，十位是2号，以此类推。这个整数在第n位上的数字记作x，如果x和n的奇偶性相同，则记下一个1，否则记下一个0。按照整数的顺序把对应位的表示奇偶性的0和1都记录下来，就形成了一个二进制数字。比如，对于342315，这个二进制数字就是001101。
+                        </p>
+                        <p>
+                            这里的计算可以用下面的表格来表示：
+                        </p>
+                        <p>
+                        </p>
+                        <table style="margin:0px;" cellspacing="0" cellpadding="0" border="1">
+                            <tbody>
+                                <tr>
+                                    <td valign="top" width="80">
+                                        <p style="text-align:center;">
+                                            数字
+                                        </p>
+                                    </td>
+                                    <td valign="top" width="32">
+                                        <p style="text-align:center;">
+                                            3
+                                        </p>
+                                    </td>
+                                    <td valign="top" width="32">
+                                        <p style="text-align:center;">
+                                            4
+                                        </p>
+                                    </td>
+                                    <td valign="top" width="32">
+                                        <p style="text-align:center;">
+                                            2
+                                        </p>
+                                    </td>
+                                    <td valign="top" width="32">
+                                        <p style="text-align:center;">
+                                            3
+                                        </p>
+                                    </td>
+                                    <td valign="top" width="32">
+                                        <p style="text-align:center;">
+                                            1
+                                        </p>
+                                    </td>
+                                    <td valign="top" width="32">
+                                        <p style="text-align:center;">
+                                            5
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="top" width="80">
+                                        <p style="text-align:center;">
+                                            数位
+                                        </p>
+                                    </td>
+                                    <td valign="top" width="32">
+                                        <p style="text-align:center;">
+                                            6
+                                        </p>
+                                    </td>
+                                    <td valign="top" width="32">
+                                        <p style="text-align:center;">
+                                            5
+                                        </p>
+                                    </td>
+                                    <td valign="top" width="32">
+                                        <p style="text-align:center;">
+                                            4
+                                        </p>
+                                    </td>
+                                    <td valign="top" width="32">
+                                        <p style="text-align:center;">
+                                            3
+                                        </p>
+                                    </td>
+                                    <td valign="top" width="32">
+                                        <p style="text-align:center;">
+                                            2
+                                        </p>
+                                    </td>
+                                    <td valign="top" width="32">
+                                        <p style="text-align:center;">
+                                            1
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="top" width="80">
+                                        <p style="text-align:center;">
+                                            数字奇偶
+                                        </p>
+                                    </td>
+                                    <td valign="top" width="32">
+                                        <p style="text-align:center;">
+                                            奇
+                                        </p>
+                                    </td>
+                                    <td valign="top" width="32">
+                                        <p style="text-align:center;">
+                                            偶
+                                        </p>
+                                    </td>
+                                    <td valign="top" width="32">
+                                        <p style="text-align:center;">
+                                            偶
+                                        </p>
+                                    </td>
+                                    <td valign="top" width="32">
+                                        <p style="text-align:center;">
+                                            奇
+                                        </p>
+                                    </td>
+                                    <td valign="top" width="32">
+                                        <p style="text-align:center;">
+                                            奇
+                                        </p>
+                                    </td>
+                                    <td valign="top" width="32">
+                                        <p style="text-align:center;">
+                                            奇
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="top" width="80">
+                                        <p style="text-align:center;">
+                                            数位奇偶
+                                        </p>
+                                    </td>
+                                    <td valign="top" width="32">
+                                        <p style="text-align:center;">
+                                            偶
+                                        </p>
+                                    </td>
+                                    <td valign="top" width="32">
+                                        <p style="text-align:center;">
+                                            奇
+                                        </p>
+                                    </td>
+                                    <td valign="top" width="32">
+                                        <p style="text-align:center;">
+                                            偶
+                                        </p>
+                                    </td>
+                                    <td valign="top" width="32">
+                                        <p style="text-align:center;">
+                                            奇
+                                        </p>
+                                    </td>
+                                    <td valign="top" width="32">
+                                        <p style="text-align:center;">
+                                            偶
+                                        </p>
+                                    </td>
+                                    <td valign="top" width="32">
+                                        <p style="text-align:center;">
+                                            奇
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="top" width="80">
+                                        <p style="text-align:center;">
+                                            奇偶一致
+                                        </p>
+                                    </td>
+                                    <td valign="top" width="32">
+                                        <p style="text-align:center;">
+                                            0
+                                        </p>
+                                    </td>
+                                    <td valign="top" width="32">
+                                        <p style="text-align:center;">
+                                            0
+                                        </p>
+                                    </td>
+                                    <td valign="top" width="32">
+                                        <p style="text-align:center;">
+                                            1
+                                        </p>
+                                    </td>
+                                    <td valign="top" width="32">
+                                        <p style="text-align:center;">
+                                            1
+                                        </p>
+                                    </td>
+                                    <td valign="top" width="32">
+                                        <p style="text-align:center;">
+                                            0
+                                        </p>
+                                    </td>
+                                    <td valign="top" width="32">
+                                        <p style="text-align:center;">
+                                            1
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="top" width="80">
+                                        <p style="text-align:center;">
+                                            二进制位值
+                                        </p>
+                                    </td>
+                                    <td valign="top" width="32">
+                                        <p style="text-align:center;">
+                                            32
+                                        </p>
+                                    </td>
+                                    <td valign="top" width="32">
+                                        <p style="text-align:center;">
+                                            16
+                                        </p>
+                                    </td>
+                                    <td valign="top" width="32">
+                                        <p style="text-align:center;">
+                                            8
+                                        </p>
+                                    </td>
+                                    <td valign="top" width="32">
+                                        <p style="text-align:center;">
+                                            4
+                                        </p>
+                                    </td>
+                                    <td valign="top" width="32">
+                                        <p style="text-align:center;">
+                                            2
+                                        </p>
+                                    </td>
+                                    <td valign="top" width="32">
+                                        <p style="text-align:center;">
+                                            1
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p></p>
+                        <p>
+                            你的程序要读入一个非负整数，整数的范围是[0,1000000]，然后按照上述算法计算出表示奇偶性的那个二进制数字，输出它对应的十进制值。
+                        </p>
+                        <p>
+                            <span style="color:#E53333;"><strong>提示：将整数从右向左分解，数位每次加1，而二进制值每次乘2。</strong></span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Input Description</div>
+                    <div class="panel-body content">
+                        <p>
+                            一个非负整数，整数的范围是[0,1000000]。
+                        </p>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Output Description</div>
+                    <div class="panel-body content">
+                        <p>
+                            一个整数，表示计算结果。
+                        </p>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Sample Input</div>
+                    <div class="panel-body">
+                        <pre class="content"><span id="sampleinput" class="sampledata">342315
+</span></pre>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Sample Output</div>
+                    <div class="panel-body">
+                        <pre class="content"><span id="sampleoutput" class="sampledata">13
+</span></pre>
+                    </div>
+                </div>
+
+
+                <center>
+                    <!--EndMarkForVirtualJudge-->
+                    <div>
+                        [<a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/submitpage.php?cid=1606&amp;pid=6&amp;langmask=524286">Submit</a>] &nbsp; [<a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/bbs.php?pid=6&amp;cid=1606">Clarification</a>]
+                        &nbsp; [<a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/problemstatus.php?id=1010">Status</a>]
+                    </div>
+                </center>
+            </div>
+
+            <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+            <script src="./Problem_files/jquery.min.js.下载"></script>
+
+            <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+            <script src="./Problem_files/bootstrap.min.js.下载"></script>
+            <br>
+            <br>
+            <p>
+                Current Online User: <span class="red">3</span></p>
+
+            <center>
+                <table class="foot" style="border:1px solid #1a5cc8">
+                    <tbody>
+                        <tr>
+                            <td>Department of Computer Science and Technology, School of Information Engineering, Hubei Minzu University</td>
+                        </tr>
+                        <tr>
+                            <td>Anything about the Problems, Please Contact Admin: 724217333@qq.com</td>
+                        </tr>
+                        <tr>
+                            <td>GPLv2 licensed by <a href="https://github.com/zhblue/hustoj">HUSTOJ</a> <span id="date">2020</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>
+            <br>
+
+            <script>
+                $(".hint pre").each(function() {
+                    var plus = "<span class='glyphicon glyphicon-plus'>Click</span>";
+                    var content = $(this);
+                    $(this).before(plus);
+                    $(this).prev().click(function() {
+                        content.toggle();
+                    });
+
+                });
+            </script>
+
+            <script>
+                var n = new Date().getFullYear();
+                document.getElementById('date').innerHTML = n;
+            </script>
+        </center>
+    </div>
+
+
+    <script>
+        function phpfm(pid) {
+            //alert(pid);
+            $.post("admin/phpfm.php", {
+                'frame': 3,
+                'pid': pid,
+                'pass': ''
+            }, function(data, status) {
+                if (status == "success") {
+                    document.location.href = "admin/phpfm.php?frame=3&pid=" + pid;
+                }
+            });
+        }
+
+        $(document).ready(function() {
+            $("#creator").load("problem-ajax.php?pid=1010");
+        });
+    </script>
+
+
+
+    <!--not cached-->
+</body>
+
+</html>

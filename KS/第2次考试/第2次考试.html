@@ -1,0 +1,176 @@
+<!doctype html>
+
+<html>
+	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="icon" href="../../img/德利傻.ico">
+	    <title>MYANSWER</title>
+		<style>
+			html {
+				height: 100%;
+				background-image: url("../../img/background.png");
+				background-size: auto;
+				background-repeat: repeat;
+				background-attachment: fixed;
+			}
+			body {
+				padding-top: 100px;
+				padding-bottom: 100px;
+			}
+			#dateTime {
+				margin: auto;
+				text-align: center;
+				width: 250px;
+				font-weight: bold;
+				font-size: 20px;
+				color: #008A99;
+			}
+			#list {
+				margin: auto;
+				width: 80%;
+				background-color: #81CFD8;
+				border-radius: 15px;
+				padding : 25px;
+			}
+			.overall {
+				width: 70%;
+				margin: auto;
+			}
+			.evenrow {
+				background-color: #00B8CC;
+			}
+			.oddsrow {
+				background-color: #3DECFF;
+			}
+			.imge {
+				width: 45px;
+				text-align: center;
+			}
+			.text {
+				font-size: 20px;
+				color: #006773;
+				text-decoration: none;
+			}
+			.code {
+				width: 50px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	 
+	<body>
+	    <script>
+	        Date.prototype.format = function (fmt) {
+	            var o = {
+	                "y+": this.getFullYear, //年
+	                "M+": this.getMonth() + 1, //月份
+	                "d+": this.getDate(), //日
+	                "h+": this.getHours(), //小时
+	                "m+": this.getMinutes(), //分
+	                "s+": this.getSeconds() //秒
+	            };
+	            if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+	            for (var k in o)
+	                if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+	            return fmt;
+	        }
+	        setInterval("document.getElementById('dateTime').innerHTML = (new Date()).format('yyyy-MM-dd hh:mm:ss');", 1000);
+	    </script>
+	 
+	    <div id="dateTime"></div>
+		<p><center><h4 style="color: #002622">代码仅供参考<br \>重要的是学习思维模式<br \>好的成绩不是抄出来的</h4><h1 style="color: #002622">请对自己负责!</h1></center></p>
+		<div id="list">
+			<div style="font-size: 20px; text-align: center"><p>题目</p></div>
+			<table class="overall">
+				<tbody>
+					<tr class="evenrow">
+						<td class="imge">
+							<img  src="../../img/德利傻.png" width="40px" alt="">
+						</td>
+						<td class="text">
+							Problem A
+						</td>
+						<td class="text">
+							日期比较
+						</td>
+						<td class="code">
+							<a href="Problem A 日期比较/Problem.html" target="_blank" class="text">题目</a>
+						</td>
+						<td class="code">
+							<a href="Problem A 日期比较/Code.html" target="_blank" class="text">代码</a>
+						</td>
+					</tr>
+					<tr class="oddsrow">
+						<td class="imge">
+							<img  src="../../img/德利傻.png" width="40px" alt="">
+						</td>
+						<td class="text">
+							Problem B
+						</td>
+						<td class="text">
+							二分法求解根号2
+						</td>
+						<td class="code">
+							<a href="Problem B 二分法求解根号2/Problem.html" target="_blank" class="text">题目</a>
+						</td>
+						<td class="code">
+							<a href="Problem B 二分法求解根号2/Code.html" target="_blank" class="text">代码</a>
+						</td>
+					</tr>
+					<tr class="evenrow">
+						<td class="imge">
+							<img  src="../../img/德利傻.png" width="40px" alt="">
+						</td>
+						<td class="text">
+							Problem C
+						</td>
+						<td class="text">
+							查找第k大元素
+						</td>
+						<td class="code">
+							<a href="Problem C 查找第k大元素/Problem.html" target="_blank" class="text">题目</a>
+						</td>
+						<td class="code">
+							<a href="Problem C 查找第k大元素/Code.html" target="_blank" class="text">代码</a>
+						</td>
+					</tr>
+					<tr class="oddsrow">
+						<td class="imge">
+							<img  src="../../img/德利傻.png" width="40px" alt="">
+						</td>
+						<td class="text">
+							Problem D
+						</td>
+						<td class="text">
+							高精度A+B
+						</td>
+						<td class="code">
+							<a href="Problem D 高精度A&B/Problem.html" target="_blank" class="text">题目</a>
+						</td>
+						<td class="code">
+							<a href="Problem D 高精度A&B/Code.html" target="_blank" class="text">代码</a>
+						</td>
+					</tr>
+					<tr class="evenrow">
+						<td class="imge">
+							<img  src="../../img/德利傻.png" width="40px" alt="">
+						</td>
+						<td class="text">
+							Problem E
+						</td>
+						<td class="text">
+							卷积运算
+						</td>
+						<td class="code">
+							<a href="Problem E 卷积运算/Problem.html" target="_blank" class="text">题目</a>
+						</td>
+						<td class="code">
+							<a href="Problem E 卷积运算/Code.html" target="_blank" class="text">代码</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div style="font-size: 15px; text-align: center"><p>如遇到Accept以外情况，本网站概不负责:P</p></div>
+		</div>
+	</body>
+</html>

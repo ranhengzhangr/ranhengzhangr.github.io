@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<!-- saved from url=(0103)http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/problem.php?cid=1609&pid=4 -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../img/favicon.ico">
+
+    <title>
+        HBMZUOJ </title>
+
+
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="./Problem_files/bootstrap.min.css">
+
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="./Problem_files/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./Problem_files/hoj.css">
+    <link rel="stylesheet" href="./Problem_files/katex.min.css">
+    <link rel="stylesheet" href="./Problem_files/mathjax.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    	<script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.js"></script>
+    	<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  	<![endif]-->
+    <script language="javascript" type="text/javascript" src="./Problem_files/jquery.min.js.下载"></script>
+</head>
+
+<body>
+    <div class="page">
+        <center>
+            <table style="width:100%;">
+                <tbody>
+                    <tr>
+                        <td style="text-align:left;color:red">Hubei Minzu University Online Judge(程序设计类课程作业和实验)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </center>
+
+        <center>
+            <table class="menu" style="background-color:#e9eef1">
+                <tbody>
+                    <tr>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/index.php">首页</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/work.php?cid=1609">题目</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/status.php?cid=1609">状态</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/contestrank.php?cid=1609">排名</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/conteststatistics.php?cid=1609">统计</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/bbs.php?cid=1609">提问</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/work-program-score.php?cid=1609">成绩</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/sim.php?cid=1609">相似度检查</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </center>
+
+
+        <center>
+            <div style="width:90%;text-align:left">
+                <div class="panel-heading">
+                    <center>
+                        <h3>Problem E: 实现一种电厂小型实时数据库系统</h3><span class="green">Time Limit: </span>1 Sec &nbsp;&nbsp;
+                        <span class="green">Memory Limit: </span>128 MB<br><span class="green">Total Submissions:
+						</span>241 &nbsp;&nbsp; <span class="green">Accepted: </span>36 &nbsp;&nbsp; <span class="green">Creator: </span><span id="creator">Imported</span>
+                    </center>
+                </div>
+                <!--StartMarkForVirtualJudge-->
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Problem Description</div>
+                    <div class="panel-body content">
+                        <p>电厂控制系统的设备有很多监测点，监测点的传感器将监测到的实时数据传送到厂级监控中心，使工程师能方便的分析电厂设备的运行状态。厂级监控中心需要将这些数据存入数据库（INSERT），并且能查询（QUERY），修改（MODIFY），删除（DELETE）这些数据。<br> 这些数据只有两种类型：模拟量（AI，浮点数， 3 位小数，例如电流，温度等 ），开关量（DI，值为 0 或 1 的数，例如开关的闭合等）。每种数据有三个属性：监测点的名称（最长20 个字符），监测到的值，数据类型。
+                            <br> 现在需要你实现这个小型的数据库系统支持以上四种操作。
+                            <br> 现定义以上四种操作的格式为：
+                            <br> OPERATION TYPE NAME VALUE（可选）。<br> 例如删除一条数据的操作为：DELETE DI Temperature<br> 查询为： QUERY DI Temperature
+                            <br> 修改： MODIFY DI Temperature 1<br> 存入为： INSERT DI Temperature 0<br> 当以上操作失败时给出提示信息： OPERATION ERROR，例如查询，修改，删除的数据不存在，插入已经存在过的一条数据（名称和类型都重复的数据），都会失败。否则给出成功提示SUCCESSED。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Input Description</div>
+                    <div class="panel-body content">
+                        <p>第一行为一个整数n，表示接下来有n 行输入，每一行为以上四种操作之一。</p>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Output Description</div>
+                    <div class="panel-body content">
+                        <p>对每行的操作输出相应的操作结果。</p>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Sample Input</div>
+                    <div class="panel-body">
+                        <pre class="content"><span id="sampleinput" class="sampledata">7
+INSERT DI Temperature 1
+INSERT AI Switch 500.500
+QUERY DI Temperature
+MODIFY DI Temperature 0
+DELETE DI Temperature
+QUERY DI Temperature
+INSERT AI Switch 63.333
+</span></pre>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Sample Output</div>
+                    <div class="panel-body">
+                        <pre class="content"><span id="sampleoutput" class="sampledata">SUCCESSED
+SUCCESSED
+1
+SUCCESSED
+SUCCESSED
+OPERATION ERROR
+OPERATION ERROR
+</span></pre>
+                    </div>
+                </div>
+
+
+                <center>
+                    <!--EndMarkForVirtualJudge-->
+                    <div>
+                        [<a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/submitpage.php?cid=1609&amp;pid=4&amp;langmask=524286">Submit</a>] &nbsp; [<a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/bbs.php?pid=4&amp;cid=1609">Clarification</a>]
+                        &nbsp; [<a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/problemstatus.php?id=1137">Status</a>]
+                    </div>
+                </center>
+            </div>
+
+            <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+            <script src="./Problem_files/jquery.min.js.下载"></script>
+
+            <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+            <script src="./Problem_files/bootstrap.min.js.下载"></script>
+            <br>
+            <br>
+            <p>
+                Current Online User: <span class="red">2</span></p>
+
+            <center>
+                <table class="foot" style="border:1px solid #1a5cc8">
+                    <tbody>
+                        <tr>
+                            <td>Department of Computer Science and Technology, School of Information Engineering, Hubei Minzu University</td>
+                        </tr>
+                        <tr>
+                            <td>Anything about the Problems, Please Contact Admin: 724217333@qq.com</td>
+                        </tr>
+                        <tr>
+                            <td>GPLv2 licensed by <a href="https://github.com/zhblue/hustoj">HUSTOJ</a> <span id="date">2020</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>
+            <br>
+
+            <script>
+                $(".hint pre").each(function() {
+                    var plus = "<span class='glyphicon glyphicon-plus'>Click</span>";
+                    var content = $(this);
+                    $(this).before(plus);
+                    $(this).prev().click(function() {
+                        content.toggle();
+                    });
+
+                });
+            </script>
+
+            <script>
+                var n = new Date().getFullYear();
+                document.getElementById('date').innerHTML = n;
+            </script>
+        </center>
+    </div>
+
+
+    <script>
+        function phpfm(pid) {
+            //alert(pid);
+            $.post("admin/phpfm.php", {
+                'frame': 3,
+                'pid': pid,
+                'pass': ''
+            }, function(data, status) {
+                if (status == "success") {
+                    document.location.href = "admin/phpfm.php?frame=3&pid=" + pid;
+                }
+            });
+        }
+
+        $(document).ready(function() {
+            $("#creator").load("problem-ajax.php?pid=1137");
+        });
+    </script>
+
+
+
+    <!--not cached-->
+</body>
+
+</html>

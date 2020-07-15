@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<!-- saved from url=(0103)http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/problem.php?cid=1609&pid=1 -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../img/favicon.ico">
+
+    <title>
+        HBMZUOJ </title>
+
+
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="./Problem_files/bootstrap.min.css">
+
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="./Problem_files/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./Problem_files/hoj.css">
+    <link rel="stylesheet" href="./Problem_files/katex.min.css">
+    <link rel="stylesheet" href="./Problem_files/mathjax.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    	<script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.js"></script>
+    	<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  	<![endif]-->
+    <script language="javascript" type="text/javascript" src="./Problem_files/jquery.min.js.下载"></script>
+</head>
+
+<body>
+    <div class="page">
+        <center>
+            <table style="width:100%;">
+                <tbody>
+                    <tr>
+                        <td style="text-align:left;color:red">Hubei Minzu University Online Judge(程序设计类课程作业和实验)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </center>
+
+        <center>
+            <table class="menu" style="background-color:#e9eef1">
+                <tbody>
+                    <tr>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/index.php">首页</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/work.php?cid=1609">题目</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/status.php?cid=1609">状态</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/contestrank.php?cid=1609">排名</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/conteststatistics.php?cid=1609">统计</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/bbs.php?cid=1609">提问</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/work-program-score.php?cid=1609">成绩</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/sim.php?cid=1609">相似度检查</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </center>
+
+
+        <center>
+            <div style="width:90%;text-align:left">
+                <div class="panel-heading">
+                    <center>
+                        <h3>Problem B: 电阻器的分类</h3><span class="green">Time Limit: </span>1 Sec &nbsp;&nbsp; <span class="green">Memory Limit: </span>128 MB<br><span class="green">Total Submissions:
+						</span>884 &nbsp;&nbsp; <span class="green">Accepted: </span>371 &nbsp;&nbsp; <span class="green">Creator: </span><span id="creator">Imported</span>
+                    </center>
+                </div>
+                <!--StartMarkForVirtualJudge-->
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Problem Description</div>
+                    <div class="panel-body content">
+                        <p>陈是电子元件实验室的一名负责老师，学校最近采购了一批电阻器，他需要做的工作就是给这些电阻器分好类，并且计算好每种电阻器的数量，并按照大小顺序给他们排好序，存放在实验室中。<br> 已知电阻器总共有四类：
+                            <br> 薄膜电阻器 film resistor (FILM)<br> 绕线式电阻器 wire resistors (WIRE)<br> 实心电阻器 solid resistor (SOLI)
+                            <br> 敏感电阻器 sensitive resistors (SENS)<br> 每一类电阻器对应的各种型号，比如说wire_resistors01代表通用线绕电阻器，它属于线绕式电阻器，为了简单起见，所给的元件中前四个字母代表了它对应的电阻器的类别，即前四个字母为”film”代表薄膜电阻器FILM，前四个字母为“wire”代表线绕式电阻器WIRE，前四个字母为”soli”代表实心电阻器SOLI，前四个字母为”sens”代表敏感电阻器SENS。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Input Description</div>
+                    <div class="panel-body content">
+                        <div>每个测试样例第一行为一个正整数n（n&lt;=50）表示有n种类型的电阻器。当n为0时，测试结束。</div>
+                        <div>接下来有n行，每行有一个字符串s(长度小于15)和一个整数k(k&lt;=20)。其中s代表电阻器的型号，n代表该型号电阻器的数量。</div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Output Description</div>
+                    <div class="panel-body content">
+                        <p>每一个样例对应的输出为四行，其中每行对应一个类别的电阻器，且按照它们数量的大小从小到大输出。测试数据保证不会出现两类电阻器数量相同的情况。<br> 每行的内容为一个字符串t和一个整数sum，其中t只可能是”FILM”，”WIRE”，”SOLI”，”SENS”中的一种。sum代表该类别电阻阻器的总数量。
+                        </p>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Sample Input</div>
+                    <div class="panel-body">
+                        <pre class="content"><span id="sampleinput" class="sampledata">5 
+wire_resistors0a 10
+solid_resistors0b 8
+solid_resistors0c 7
+sensitive_resistors0d 16
+wire_resistors0e 10
+0
+</span></pre>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Sample Output</div>
+                    <div class="panel-body">
+                        <pre class="content"><span id="sampleoutput" class="sampledata">FILM 0
+SOLI 15
+SENS 16
+WIRE 20
+</span></pre>
+                    </div>
+                </div>
+
+
+                <center>
+                    <!--EndMarkForVirtualJudge-->
+                    <div>
+                        [<a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/submitpage.php?cid=1609&amp;pid=1&amp;langmask=524286">Submit</a>] &nbsp; [<a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/bbs.php?pid=1&amp;cid=1609">Clarification</a>]
+                        &nbsp; [<a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/problemstatus.php?id=1134">Status</a>]
+                    </div>
+                </center>
+            </div>
+
+            <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+            <script src="./Problem_files/jquery.min.js.下载"></script>
+
+            <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+            <script src="./Problem_files/bootstrap.min.js.下载"></script>
+            <br>
+            <br>
+            <p>
+                Current Online User: <span class="red">2</span></p>
+
+            <center>
+                <table class="foot" style="border:1px solid #1a5cc8">
+                    <tbody>
+                        <tr>
+                            <td>Department of Computer Science and Technology, School of Information Engineering, Hubei Minzu University</td>
+                        </tr>
+                        <tr>
+                            <td>Anything about the Problems, Please Contact Admin: 724217333@qq.com</td>
+                        </tr>
+                        <tr>
+                            <td>GPLv2 licensed by <a href="https://github.com/zhblue/hustoj">HUSTOJ</a> <span id="date">2020</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>
+            <br>
+
+            <script>
+                $(".hint pre").each(function() {
+                    var plus = "<span class='glyphicon glyphicon-plus'>Click</span>";
+                    var content = $(this);
+                    $(this).before(plus);
+                    $(this).prev().click(function() {
+                        content.toggle();
+                    });
+
+                });
+            </script>
+
+            <script>
+                var n = new Date().getFullYear();
+                document.getElementById('date').innerHTML = n;
+            </script>
+        </center>
+    </div>
+
+
+    <script>
+        function phpfm(pid) {
+            //alert(pid);
+            $.post("admin/phpfm.php", {
+                'frame': 3,
+                'pid': pid,
+                'pass': ''
+            }, function(data, status) {
+                if (status == "success") {
+                    document.location.href = "admin/phpfm.php?frame=3&pid=" + pid;
+                }
+            });
+        }
+
+        $(document).ready(function() {
+            $("#creator").load("problem-ajax.php?pid=1134");
+        });
+    </script>
+
+
+
+    <!--not cached-->
+</body>
+
+</html>

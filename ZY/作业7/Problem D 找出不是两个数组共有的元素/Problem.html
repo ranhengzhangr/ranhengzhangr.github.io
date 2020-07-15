@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!-- saved from url=(0103)http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/problem.php?cid=1604&pid=3 -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../img/favicon.ico">
+
+    <title>
+        HBMZUOJ </title>
+
+
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="./Problem_files/bootstrap.min.css">
+
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="./Problem_files/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./Problem_files/hoj.css">
+    <link rel="stylesheet" href="./Problem_files/katex.min.css">
+    <link rel="stylesheet" href="./Problem_files/mathjax.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    	<script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.js"></script>
+    	<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  	<![endif]-->
+    <script language="javascript" type="text/javascript" src="./Problem_files/jquery.min.js.下载"></script>
+</head>
+
+<body>
+    <div class="page">
+        <center>
+            <table style="width:100%;">
+                <tbody>
+                    <tr>
+                        <td style="text-align:left;color:red">Hubei Minzu University Online Judge(程序设计类课程作业和实验)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </center>
+
+        <center>
+            <table class="menu" style="background-color:#e9eef1">
+                <tbody>
+                    <tr>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/index.php">首页</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/work.php?cid=1604">题目</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/status.php?cid=1604">状态</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/contestrank.php?cid=1604">排名</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/conteststatistics.php?cid=1604">统计</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/bbs.php?cid=1604">提问</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/work-program-score.php?cid=1604">成绩</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/sim.php?cid=1604">相似度检查</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </center>
+
+
+        <center>
+            <div style="width:90%;text-align:left">
+                <div class="panel-heading">
+                    <center>
+                        <h3>Problem D: 找出不是两个数组共有的元素（20 分）</h3><span class="green">Time Limit: </span>1 Sec &nbsp;&nbsp;
+                        <span class="green">Memory Limit: </span>128 MB<br><span class="green">Total Submissions:
+						</span>650 &nbsp;&nbsp; <span class="green">Accepted: </span>254 &nbsp;&nbsp; <span class="green">Creator: </span><span id="creator"><a
+								href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/userinfo.php?user=admin">admin</a></span>
+                    </center>
+                </div>
+                <!--StartMarkForVirtualJudge-->
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Problem Description</div>
+                    <div class="panel-body content"><span style="color:#292B2C;font-family:-apple-system, &quot;font-size:14px;background-color:#FFFFFF;">给定两个整型数组，本题要求找出不是两者共有的元素。</span>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Input Description</div>
+                    <div class="panel-body content"><span style="color:#292B2C;font-family:-apple-system, &quot;font-size:14px;background-color:#FFFFFF;">输入分别在两行中给出两个整型数组，每行先给出正整数</span>N<span style="color:#292B2C;font-family:-apple-system, &quot;font-size:14px;background-color:#FFFFFF;">（</span>≤20
+                        <span style="color:#292B2C;font-family:-apple-system, &quot;font-size:14px;background-color:#FFFFFF;">），随后是</span>N<span style="color:#292B2C;font-family:-apple-system, &quot;font-size:14px;background-color:#FFFFFF;">个整数，其间以空格分隔。</span>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Output Description</div>
+                    <div class="panel-body content"><span style="color:#292B2C;font-family:-apple-system, &quot;font-size:14px;background-color:#FFFFFF;">在一行中按照数字给出的顺序输出不是两数组共有的元素，数字间以空格分隔，但行末不得有多余的空格。题目保证至少存在一个这样的数字。同一数字不重复输出。</span>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Sample Input</div>
+                    <div class="panel-body">
+                        <pre class="content"><span id="sampleinput" class="sampledata">10 3 -5 2 8 0 3 5 -15 9 100
+11 6 4 8 2 6 -5 9 0 100 8 1
+</span></pre>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Sample Output</div>
+                    <div class="panel-body">
+                        <pre class="content"><span id="sampleoutput" class="sampledata">3 5 -15 6 4 1
+</span></pre>
+                    </div>
+                </div>
+
+
+                <center>
+                    <!--EndMarkForVirtualJudge-->
+                    <div>
+                        [<a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/submitpage.php?cid=1604&amp;pid=3&amp;langmask=524286">Submit</a>] &nbsp; [<a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/bbs.php?pid=3&amp;cid=1604">Clarification</a>]
+                        &nbsp; [<a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/problemstatus.php?id=2137">Status</a>]
+                    </div>
+                </center>
+            </div>
+
+            <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+            <script src="./Problem_files/jquery.min.js.下载"></script>
+
+            <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+            <script src="./Problem_files/bootstrap.min.js.下载"></script>
+            <br>
+            <br>
+            <p>
+                Current Online User: <span class="red">3</span></p>
+
+            <center>
+                <table class="foot" style="border:1px solid #1a5cc8">
+                    <tbody>
+                        <tr>
+                            <td>Department of Computer Science and Technology, School of Information Engineering, Hubei Minzu University</td>
+                        </tr>
+                        <tr>
+                            <td>Anything about the Problems, Please Contact Admin: 724217333@qq.com</td>
+                        </tr>
+                        <tr>
+                            <td>GPLv2 licensed by <a href="https://github.com/zhblue/hustoj">HUSTOJ</a> <span id="date">2020</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>
+            <br>
+
+            <script>
+                $(".hint pre").each(function() {
+                    var plus = "<span class='glyphicon glyphicon-plus'>Click</span>";
+                    var content = $(this);
+                    $(this).before(plus);
+                    $(this).prev().click(function() {
+                        content.toggle();
+                    });
+
+                });
+            </script>
+
+            <script>
+                var n = new Date().getFullYear();
+                document.getElementById('date').innerHTML = n;
+            </script>
+        </center>
+    </div>
+
+
+    <script>
+        function phpfm(pid) {
+            //alert(pid);
+            $.post("admin/phpfm.php", {
+                'frame': 3,
+                'pid': pid,
+                'pass': ''
+            }, function(data, status) {
+                if (status == "success") {
+                    document.location.href = "admin/phpfm.php?frame=3&pid=" + pid;
+                }
+            });
+        }
+
+        $(document).ready(function() {
+            $("#creator").load("problem-ajax.php?pid=2137");
+        });
+    </script>
+
+
+
+    <!--not cached-->
+</body>
+
+</html>

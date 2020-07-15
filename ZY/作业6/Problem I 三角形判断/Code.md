@@ -1,0 +1,97 @@
+```c
+//GCC
+
+#include <stdio.h>
+
+#include <math.h>
+
+void calculate(float a, float b, float c);
+
+int main (void)
+{
+    int x1, x2, x3, y1, y2, y3, u = 0;
+    float l1, l2, l3;
+
+    scanf("%d %d %d %d %d %d", &x1, &y1, &x2, &y2, &x3, &y3);
+    l1 = sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
+    l2 = sqrt((x2 - x3) * (x2 - x3) + (y2 - y3) * (y2 - y3));
+    l3 = sqrt((x3 - x1) * (x3 - x1) + (y3 - y1) * (y3 - y1));
+    if(l1 + l2 <= l3){
+        u = 1;
+    }
+    if(l2 + l3 <= l1){
+        u = 1;
+    }
+    if(l3 + l1 <= l2){
+        u = 1;
+    }
+    if(u == 0){
+        calculate(l1, l2, l3);
+    }
+    else{
+        printf("Impossible");
+    }
+
+    return 0;
+}
+
+void calculate(float a, float b, float c)
+{
+    float l, s, p;
+    l = a + b + c;
+    p = l / 2;
+    s=sqrt(p * (p - a) * (p - b) * (p - c));
+    printf("L = %.2f, A = %.2f", l, s);
+}
+
+```
+
+```c++
+//G++
+
+#include <iostream>
+
+#include <iomanip>
+
+#include <cmath>
+
+int main (void)
+{
+    using namespace std;
+
+    int x1, x2, x3, y1, y2, y3;
+    float k1, k2, L, A, la, lb, lc, p;
+
+    cin >> x1
+        >> y1
+        >> x2
+        >> y2
+        >> x3
+        >> y3;
+    k1 = float(x1 - x2) / float(y1 - y2);
+    k2 = float(x2 - x3) / float(y2 - y3);
+    if(k1 == k2){
+        cout << "Impossible";
+    }
+    else{
+        la = sqrt(float((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2)));
+        lb = sqrt(float((x2 - x3) * (x2 - x3) + (y2 - y3) * (y2 - y3)));
+        lc = sqrt(float((x3 - x1) * (x3 - x1) + (y3 - y1) * (y3 - y1)));
+        L = la + lb + lc;
+        p = L / 2;
+        A = sqrt(p * (p - la) * (p - lb) * (p - lc));
+        cout << "L = "
+             << fixed
+             << setprecision(2)
+             << L
+             << ", A = "
+             << fixed
+             << setprecision(2)
+             << A;
+    }
+    cout << endl;
+
+    return 0;
+}
+
+```

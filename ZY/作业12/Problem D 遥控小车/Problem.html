@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!-- saved from url=(0103)http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/problem.php?cid=1609&pid=3 -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../img/favicon.ico">
+
+    <title>
+        HBMZUOJ </title>
+
+
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="./Problem_files/bootstrap.min.css">
+
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="./Problem_files/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./Problem_files/hoj.css">
+    <link rel="stylesheet" href="./Problem_files/katex.min.css">
+    <link rel="stylesheet" href="./Problem_files/mathjax.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    	<script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.js"></script>
+    	<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  	<![endif]-->
+    <script language="javascript" type="text/javascript" src="./Problem_files/jquery.min.js.下载"></script>
+</head>
+
+<body>
+    <div class="page">
+        <center>
+            <table style="width:100%;">
+                <tbody>
+                    <tr>
+                        <td style="text-align:left;color:red">Hubei Minzu University Online Judge(程序设计类课程作业和实验)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </center>
+
+        <center>
+            <table class="menu" style="background-color:#e9eef1">
+                <tbody>
+                    <tr>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/index.php">首页</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/work.php?cid=1609">题目</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/status.php?cid=1609">状态</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/contestrank.php?cid=1609">排名</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/conteststatistics.php?cid=1609">统计</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/bbs.php?cid=1609">提问</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/work-program-score.php?cid=1609">成绩</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/sim.php?cid=1609">相似度检查</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </center>
+
+
+        <center>
+            <div style="width:90%;text-align:left">
+                <div class="panel-heading">
+                    <center>
+                        <h3>Problem D: 遥控小车</h3><span class="green">Time Limit: </span>1 Sec &nbsp;&nbsp; <span class="green">Memory Limit: </span>128 MB<br><span class="green">Total Submissions:
+						</span>520 &nbsp;&nbsp; <span class="green">Accepted: </span>248 &nbsp;&nbsp; <span class="green">Creator: </span><span id="creator">Imported</span>
+                    </center>
+                </div>
+                <!--StartMarkForVirtualJudge-->
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Problem Description</div>
+                    <div class="panel-body content">
+                        <p>爸爸给小明买了一个玩具小车，是通过手柄遥控的，小明在一个房间里面用手柄控制小车，手柄上面的按键有启动键、停止键、四个方向键和一个加速键。已知小车的正常速度为1个单位长度/秒，当第一次按下加速键后，速度变为原来的两倍，即2个单位长度/秒，当下一次按下加速键的时候，速度就恢复为初始的正常速度，再次按下的时候又会加速，依次类推。<br> 为了简单起见，该房间可以看作一个边长为50个单位长度的正方形，且把左下角的坐标视为(0,0)，即原点，默认小车的起始位置始终都在原点。
+                            <br> 在某个时刻，小明按下启动键，此时记为0时刻，小车就默认向上方出发，小明可以在小车运行的过程中，通过按键改变小车的方向(上，下，左，右)，也可以通过按加速键使小车加速或者恢复正常的速度，经过50秒后按下停止键，求此时小车的坐标。
+                            <br> 由于这个房间的四周都是墙壁，如果某个时刻小车运行到墙壁边缘，且方向是面对墙壁的，那么小车是没有办法继续前进的，只能在原地挣扎直到小明通过按键改变它的方向。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Input Description</div>
+                    <div class="panel-body content">
+                        <p>每个测试样例第一行为一个正整数n（n&lt;=20）表示在小车运行中小明对于小车的控制操作次数，当n为0时，测试结束。<br> 接下来有n行，每行有一个整数k(0&lt;k&lt;50)和一个字符c(c只能为U、D、L、R、A中的一种)。其中k代表操作小车的时刻，c代表操作的类型，U代表方向向上，D代表方向向下，L代表方向向左，R代表方向向右，A代表加速或者恢复原来的速度。
+                        </p>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Output Description</div>
+                    <div class="panel-body content">
+                        <p>每一个样例对应的输出为一行，输出停止键按下时小车的坐标。输出格式为整数m和整数n(0&lt;=m,n&lt;=50)，代表小车的横坐标和纵坐标。</p>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Sample Input</div>
+                    <div class="panel-body">
+                        <pre class="content"><span id="sampleinput" class="sampledata">1
+30 R
+4
+10 D
+20 A
+30 A
+40 L
+0
+</span></pre>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Sample Output</div>
+                    <div class="panel-body">
+                        <pre class="content"><span id="sampleoutput" class="sampledata">20 30
+0 0
+</span></pre>
+                    </div>
+                </div>
+
+
+                <center>
+                    <!--EndMarkForVirtualJudge-->
+                    <div>
+                        [<a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/submitpage.php?cid=1609&amp;pid=3&amp;langmask=524286">Submit</a>] &nbsp; [<a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/bbs.php?pid=3&amp;cid=1609">Clarification</a>]
+                        &nbsp; [<a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/problemstatus.php?id=1136">Status</a>]
+                    </div>
+                </center>
+            </div>
+
+            <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+            <script src="./Problem_files/jquery.min.js.下载"></script>
+
+            <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+            <script src="./Problem_files/bootstrap.min.js.下载"></script>
+            <br>
+            <br>
+            <p>
+                Current Online User: <span class="red">2</span></p>
+
+            <center>
+                <table class="foot" style="border:1px solid #1a5cc8">
+                    <tbody>
+                        <tr>
+                            <td>Department of Computer Science and Technology, School of Information Engineering, Hubei Minzu University</td>
+                        </tr>
+                        <tr>
+                            <td>Anything about the Problems, Please Contact Admin: 724217333@qq.com</td>
+                        </tr>
+                        <tr>
+                            <td>GPLv2 licensed by <a href="https://github.com/zhblue/hustoj">HUSTOJ</a> <span id="date">2020</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>
+            <br>
+
+            <script>
+                $(".hint pre").each(function() {
+                    var plus = "<span class='glyphicon glyphicon-plus'>Click</span>";
+                    var content = $(this);
+                    $(this).before(plus);
+                    $(this).prev().click(function() {
+                        content.toggle();
+                    });
+
+                });
+            </script>
+
+            <script>
+                var n = new Date().getFullYear();
+                document.getElementById('date').innerHTML = n;
+            </script>
+        </center>
+    </div>
+
+
+    <script>
+        function phpfm(pid) {
+            //alert(pid);
+            $.post("admin/phpfm.php", {
+                'frame': 3,
+                'pid': pid,
+                'pass': ''
+            }, function(data, status) {
+                if (status == "success") {
+                    document.location.href = "admin/phpfm.php?frame=3&pid=" + pid;
+                }
+            });
+        }
+
+        $(document).ready(function() {
+            $("#creator").load("problem-ajax.php?pid=1136");
+        });
+    </script>
+
+
+
+    <!--not cached-->
+</body>
+
+</html>

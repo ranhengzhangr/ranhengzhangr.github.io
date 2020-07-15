@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!-- saved from url=(0103)http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/problem.php?cid=1870&pid=1 -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../img/favicon.ico">
+
+    <title>
+        HBMZUOJ </title>
+
+
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="./Problem_files/bootstrap.min.css">
+
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="./Problem_files/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./Problem_files/hoj.css">
+    <link rel="stylesheet" href="./Problem_files/katex.min.css">
+    <link rel="stylesheet" href="./Problem_files/mathjax.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    	<script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.js"></script>
+    	<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  	<![endif]-->
+    <script language="javascript" type="text/javascript" src="./Problem_files/jquery.min.js.下载"></script>
+</head>
+
+<body>
+    <div class="page">
+        <center>
+            <table style="width:100%;">
+                <tbody>
+                    <tr>
+                        <td style="text-align:left;color:red">Hubei Minzu University Online Judge(程序设计类课程作业和实验)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </center>
+
+        <center>
+            <table class="menu" style="background-color:#e9eef1">
+                <tbody>
+                    <tr>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/index.php">首页</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/work.php?cid=1870">题目</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/status.php?cid=1870">状态</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/contestrank.php?cid=1870">排名</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/conteststatistics.php?cid=1870">统计</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/bbs.php?cid=1870">提问</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/work-program-score.php?cid=1870">成绩</a>
+                        </td>
+                        <td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/sim.php?cid=1870">相似度检查</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </center>
+
+
+        <center>
+            <div style="width:90%;text-align:left">
+                <div class="panel-heading">
+                    <center>
+                        <h3>Problem B: 链表实验题目(有序链表)</h3><span class="green">Time Limit: </span>1 Sec &nbsp;&nbsp; <span class="green">Memory Limit: </span>128 MB<br><span class="green">Total Submissions:
+						</span>419 &nbsp;&nbsp; <span class="green">Accepted: </span>261 &nbsp;&nbsp; <span class="green">Creator: </span><span id="creator"><a
+								href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/userinfo.php?user=admin">admin</a></span>
+                    </center>
+                </div>
+                <!--StartMarkForVirtualJudge-->
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Problem Description</div>
+                    <div class="panel-body content">链表结点的结构定义为： <br> struct node{<br> &nbsp; &nbsp; int value;<br> &nbsp; &nbsp; struct node *next;<br> }; <br> 编写下列函数： <br> struct node *insert(struct node *head, int n)&nbsp; //向链表首部插入一个值为n的结点，使链表的结点值从小到大有序<br> struct node *build_list()
+                        &nbsp;//建立链表，调用函数struct node *insert(struct node *head, int n)<br> struct node *search_list(struct node *head, int n) &nbsp;//搜索链表<br> struct node *delete_from_list(struct node *head, int n) &nbsp;//删除链表中值为n的结点，并释放该结点<br> void
+                        print_list(struct node *head) &nbsp;//打印链表 <br>
+                        <br>
+                        <br> 测试程序为： <br> #include &lt;stdio.h&gt;<br> #include &lt;stdlib.h&gt;<br> struct node{<br> &nbsp; &nbsp; int value;<br> &nbsp; &nbsp; struct node *next;<br> };
+                        <br> struct node *insert(struct node *head, int n);<br> struct node *build_list();<br> struct node *search_list(struct node *head, int n);<br> struct node *delete_from_list(struct node *head, int n);<br> void print_list(struct
+                        node *head);<br> int main()<br> {
+                        <br> &nbsp; &nbsp; &nbsp;struct node *first = NULL;<br> &nbsp; &nbsp; &nbsp;int n;<br> &nbsp; &nbsp; &nbsp;first = build_list();<br> &nbsp; &nbsp; &nbsp;print_list(first);<br> &nbsp; &nbsp; &nbsp;scanf("%d", &amp;n);<br> &nbsp;
+                        &nbsp; &nbsp;if(search_list(first, n) == NULL)<br> &nbsp; &nbsp; &nbsp;{<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;printf("NO\n");<br> &nbsp; &nbsp; &nbsp;}<br> &nbsp; &nbsp; &nbsp;else<br> &nbsp; &nbsp; &nbsp;{<br> &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp;printf("YES\n");<br> &nbsp; &nbsp; &nbsp;}<br> &nbsp; &nbsp; &nbsp; first = delete_from_list(first, n);<br> &nbsp; &nbsp; &nbsp;print_list(first);<br> &nbsp; &nbsp; &nbsp;return 0;<br> } <br> /* 你的代码将被嵌在这里 */ <br></div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Input Description</div>
+                    <div class="panel-body content"><span style="color:#333333;background-color:#F4FBFF;">输入的第一行是若干整数，为建立链表结点的值，当输入-1时结束。</span><br>
+                        <span style="color:#333333;background-color:#F4FBFF;">输入的第二行是一个整数n，为搜索和删除的结点的值。</span></div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Output Description</div>
+                    <div class="panel-body content">
+                        <p style="color:#333333;">
+                            第一行打印出链表结点的值，每个整数以","分隔，最后一个后面没有逗号。
+                            <br>
+                        </p>
+                        <p style="color:#333333;">
+                            第二行输出搜索值为n的结点的结果，找到了输出YES，否则输出NO。
+                            <br>
+                        </p>
+                        <p style="color:#333333;">
+                            第三行输出删除值为n的结点后的链表结点的值，每个整数以","分隔，最后一个后面没有逗号。
+                            <br></p>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Sample Input</div>
+                    <div class="panel-body">
+                        <pre class="content"><span id="sampleinput" class="sampledata">10 -20 30 40 -50 60 -70 -80 90 100 -1
+40
+</span></pre>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Sample Output</div>
+                    <div class="panel-body">
+                        <pre class="content"><span id="sampleoutput" class="sampledata">-80,-70,-50,-20,10,30,40,60,90,100
+YES
+-80,-70,-50,-20,10,30,60,90,100
+</span></pre>
+                    </div>
+                </div>
+
+
+                <center>
+                    <!--EndMarkForVirtualJudge-->
+                    <div>
+                        [<a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/submitpage.php?cid=1870&amp;pid=1&amp;langmask=524286">Submit</a>] &nbsp; [<a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/bbs.php?pid=1&amp;cid=1870">Clarification</a>]
+                        &nbsp; [<a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/problemstatus.php?id=2164">Status</a>]
+                    </div>
+                </center>
+            </div>
+
+            <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+            <script src="./Problem_files/jquery.min.js.下载"></script>
+
+            <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+            <script src="./Problem_files/bootstrap.min.js.下载"></script>
+            <br>
+            <br>
+            <p>
+                Current Online User: <span class="red">1</span></p>
+
+            <center>
+                <table class="foot" style="border:1px solid #1a5cc8">
+                    <tbody>
+                        <tr>
+                            <td>Department of Computer Science and Technology, School of Information Engineering, Hubei Minzu University</td>
+                        </tr>
+                        <tr>
+                            <td>Anything about the Problems, Please Contact Admin: 724217333@qq.com</td>
+                        </tr>
+                        <tr>
+                            <td>GPLv2 licensed by <a href="https://github.com/zhblue/hustoj">HUSTOJ</a> <span id="date">2020</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>
+            <br>
+
+            <script>
+                $(".hint pre").each(function() {
+                    var plus = "<span class='glyphicon glyphicon-plus'>Click</span>";
+                    var content = $(this);
+                    $(this).before(plus);
+                    $(this).prev().click(function() {
+                        content.toggle();
+                    });
+
+                });
+            </script>
+
+            <script>
+                var n = new Date().getFullYear();
+                document.getElementById('date').innerHTML = n;
+            </script>
+        </center>
+    </div>
+
+
+    <script>
+        function phpfm(pid) {
+            //alert(pid);
+            $.post("admin/phpfm.php", {
+                'frame': 3,
+                'pid': pid,
+                'pass': ''
+            }, function(data, status) {
+                if (status == "success") {
+                    document.location.href = "admin/phpfm.php?frame=3&pid=" + pid;
+                }
+            });
+        }
+
+        $(document).ready(function() {
+            $("#creator").load("problem-ajax.php?pid=2164");
+        });
+    </script>
+
+
+
+    <!--not cached-->
+</body>
+
+</html>

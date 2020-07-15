@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!-- saved from url=(0103)http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/problem.php?cid=1903&pid=6 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/favicon.ico">
+
+	<title>
+		HBMZUOJ	</title>
+
+	
+<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="./Problem G 矩阵乘积_files/bootstrap.min.css">
+
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet" href="./Problem G 矩阵乘积_files/bootstrap-theme.min.css">
+<link rel="stylesheet" href="./Problem G 矩阵乘积_files/hoj.css">
+<link rel="stylesheet" href="./Problem G 矩阵乘积_files/katex.min.css">
+<link rel="stylesheet" href="./Problem G 矩阵乘积_files/mathjax.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+    	<script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.js"></script>
+    	<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  	<![endif]-->
+	<script language="javascript" type="text/javascript" src="./Problem G 矩阵乘积_files/jquery.min.js.下载"></script>
+</head>
+
+<body>
+<div class="page">
+<center><table style="width:100%;"><tbody><tr>
+<td style="text-align:left;color:red">Hubei Minzu University Online Judge(程序设计类课程考试)</td>
+</tr></tbody></table></center>
+
+<center><table class="menu" style="background-color:#e9eef1"><tbody><tr>
+<td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/index.php">首页</a></td>
+<td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/exam.php?cid=1903">编程</a></td>
+<td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/select.php?cid=1903">选择</a></td>
+<td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/status.php?cid=1903">状态</a></td>
+<td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/contestrank.php?cid=1903">排名</a></td>
+<td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/conteststatistics.php?cid=1903">统计</a></td>
+<td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/bbs.php?cid=1903">提问</a></td>
+<td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/exam-score.php?cid=1903">成绩</a></td>
+<td><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/cheat-check.php?cid=1903">作弊检查</a></td>
+</tr></tbody></table></center>
+
+<center><div class="broadcast">
+<marquee id="broadcast" scrollamount="2" direction="left" scrolldelay="50" onmouseover="this.stop()" onmouseout="this.start()" ;="">
+  沉着应考，冷静做题，讨厌作弊！</marquee></div></center>
+
+				
+
+<center>
+<div style="width:90%;text-align:left">
+	<div class="panel-heading">
+<center><h3>Problem G: 矩阵乘积</h3><span class="green">Time Limit: </span>1 Sec &nbsp;&nbsp; <span class="green">Memory Limit: </span>128 MB<br><span class="green">Total Submissions: </span>794 &nbsp;&nbsp; <span class="green">Accepted: </span>340 &nbsp;&nbsp; <span class="green">Creator: </span><span id="creator"><a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/userinfo.php?user=admin">admin</a></span></center></div><!--StartMarkForVirtualJudge-->
+	<div class="panel panel-default">
+	 	<div class="panel-heading" style="font-size:18px">Problem Description</div>
+		<div class="panel-body content">给定两个矩阵Am*n和Bn*k，请你编程计算两个矩阵的积Cm*k=A*B。</div>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading" style="font-size:18px">Input Description</div>
+		<div class="panel-body content">输入包含三个部分。<br>
+第一部分只有一行，为三个正整数m, n, k (m, n, k&lt;100)。<br>
+第二部分为矩阵Am*n，有m行，n列，每个元素属于（-100,100），以空格分隔。<br>
+第三部分为矩阵Bn*k，有n行，k列，每个元素属于（-100,100），以空格分隔。<br></div>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-heading" style="font-size:18px">Output Description</div>
+		<div class="panel-body content">输出A和B的积C，元素之间用一个空格分隔。注意：每行的最后一个元素后面没有空格。</div>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-heading" style="font-size:18px">Sample Input</div>
+		<div class="panel-body"><pre class="content"><span id="sampleinput" class="sampledata">3 2 3
+2 2
+-2 1
+1 5
+5 -5 8
+5 7 9
+</span></pre></div>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-heading" style="font-size:18px">Sample Output</div>
+		<div class="panel-body"><pre class="content"><span id="sampleoutput" class="sampledata">20 4 34
+-5 17 -7
+30 30 53
+</span></pre></div>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-heading" style="font-size:18px">Hint</div>
+		<div class="panel-body content">说明：OJ系统支持C99标准中的变长数组。</div>
+	</div>
+
+
+<center>
+<!--EndMarkForVirtualJudge-->
+<div>
+[<a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/submitpage.php?cid=1903&amp;pid=6&amp;langmask=524286">Submit</a>] &nbsp; [<a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/bbs.php?pid=6&amp;cid=1903">Clarification</a>] &nbsp; [<a href="http://219.138.209.78:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/problemstatus.php?id=2149">Status</a>]</div>
+</center>
+</div>
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="./Problem G 矩阵乘积_files/jquery.min.js.下载"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="./Problem G 矩阵乘积_files/bootstrap.min.js.下载"></script>
+<br>
+<br>
+<p>
+Current Online User: <span class="red">10</span></p>
+
+<center>
+<table class="foot" style="border:1px solid #1a5cc8">
+    <tbody><tr><td>Department of Computer Science and Technology, School of Information Engineering, Hubei Minzu University</td></tr> 
+    <tr><td>Anything about the Problems, Please Contact Admin: 724217333@qq.com</td></tr>
+    <tr><td>GPLv2 licensed by <a href="https://github.com/zhblue/hustoj">HUSTOJ</a> <span id="date">2020</span></td></tr>
+</tbody></table>
+</center>
+<br>
+
+<script>
+$(".hint pre").each(function(){
+	var plus="<span class='glyphicon glyphicon-plus'>Click</span>";
+	var content=$(this);
+	$(this).before(plus);
+	$(this).prev().click(function(){
+		content.toggle();
+	});
+	
+});
+</script>
+
+<script>
+    var n = new Date().getFullYear();
+    document.getElementById('date').innerHTML=n;
+</script>
+</center></div>
+
+
+<script>
+function phpfm(pid){
+	//alert(pid);
+	$.post("admin/phpfm.php",{'frame':3,'pid':pid,'pass':''}, function(data,status){
+		if (status == "success"){
+			document.location.href = "admin/phpfm.php?frame=3&pid=" + pid;
+		}
+	});
+}
+
+$(document).ready(function(){
+	$("#creator").load("problem-ajax.php?pid=2149");
+});
+
+</script>
+
+
+
+<!--not cached-->
+<div class="xl-chrome-ext-bar" id="xl_chrome_ext_{4DB361DE-01F7-4376-B494-639E489D19ED}" style="display: none;">
+      <div class="xl-chrome-ext-bar__logo"></div>
+
+      <a id="xl_chrome_ext_download" href="javascript:;" class="xl-chrome-ext-bar__option">下载视频</a>
+      <a id="xl_chrome_ext_close" href="javascript:;" class="xl-chrome-ext-bar__close"></a>
+    </div></body></html>

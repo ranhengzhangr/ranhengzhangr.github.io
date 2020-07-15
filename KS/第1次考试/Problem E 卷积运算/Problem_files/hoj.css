@@ -1,0 +1,225 @@
+a {
+    	font-size: 16px;
+    	color: #1A5CC8;
+    	text-decoration: none;
+}
+a:hover {
+    	font-size: 16px;
+    	color: #f7941e;
+    	text-decoration: underline;
+}
+h1 {
+    	color: #1a5cc8;
+}
+h2 {
+    	color: #1a5cc8;
+}
+h3 {
+    	color: #1a5cc8;
+}
+p {
+    	font-size: 16px;
+}
+pre {
+    	font-size: 16px;    
+    	line-height: 24px;
+    	white-space: pre-wrap;
+    	background-color: #f4fbff;
+    	border: 1px dashed #b7cbff;
+    	border-radius: 3px;
+}
+textarea {
+    	font-size: 16px;    
+   	line-height: 24px;
+   	color: #0000ff;
+   	padding: 0 10px;
+    	border: 1px solid #ddd;
+}
+select{
+    	font-size: 16px;    
+   	height: 32px;
+   	color: #ff0000;
+   	width: 120px;
+   	padding-left: 2px;
+   	border-radius: 0px;
+    	border: 1px solid #ddd;
+}
+input{
+    	font-size: 16px;    
+   	height: 32px;
+   	color: #0000ff;
+   	padding-left: 4px;
+   	border-radius: 0px;
+    	border: 1px solid #ddd;
+}
+.myinput{
+    	font-size: 16px;    
+   	background-color: #008000;
+   	color: #ffffff;
+   	border: 0px;
+   	width: 80px;
+   	cursor: pointer;
+   	border-radius: 0px;
+}
+.mybtn {
+    	font-size: 16px;    
+   	background-color: #008000;
+   	color: #ffffff;
+   	border: 0px;
+   	width: 80px;
+   	cursor: pointer;
+   	border-radius: 0px;
+}
+.tb {
+    	font-size: 16px;
+    	text-align: center;
+    	empty-cells: show;
+    	width: 100%;
+    	border-collapse: separate;
+    	border-spacing: 1px;
+    	border-spacing: expression(this.cellSpacing=1);
+}
+.toprow {
+    	background-color: #1a5cc8;
+    	white-space: nowrap;
+    	line-height: 32px;
+    	color: #ffffff;       
+}
+.oddrow {
+    	background-color: #d7ebff;
+    	line-height: 32px;       
+}
+.evenrow {
+    	background-color: #ffffff;
+    	line-height: 32px;       
+}
+
+.tb_score {
+    	font-size: 16px;
+    	text-align: center;
+    	empty-cells: show;
+    	width: 100%;
+    	background-color: #b7cbff;
+    	border-collapse: separate;
+    	border-spacing: 1px;
+    	border-spacing: expression(this.cellSpacing=1);
+}
+.toprow_score {
+    	background-color: #f4fbff;
+    	white-space: nowrap;
+    	line-height: 32px;       
+}
+.oddrow_score {
+    	background-color: #ffffff;
+    	line-height: 32px;       
+}
+.evenrow_score {
+    	background-color: #ffffff;
+    	line-height: 32px;       
+}
+
+.ranktb {
+    	font-size: 16px;
+    	text-align: center;
+    	empty-cells: show;
+    	width: 100%;
+    	border-collapse: separate;
+    	border-spacing: 1px;
+    	border-spacing: expression(this.cellSpacing=1);
+}
+.ranktoprow {
+    	background-color: #1a5cc8;
+    	white-space: nowrap;
+    	color: #ffffff;       
+    	line-height: 32px;       
+}
+.rankoddrow {
+    	background-color: #d7ebff;
+    	line-height: 16px;       
+}
+.rankevenrow {
+    	background-color: #ffffff;
+    	line-height: 16px;       
+}
+
+body {
+    	background-color: #ffffff;
+    	font-size: 16px;
+	text-align: center;
+	margin: 0 auto;
+}
+.page {
+	width: 98%;
+	margin: 0 auto;
+}
+
+.green {
+    	color: green;
+}
+.red {
+    	color: red;
+}
+.blue {
+    	color: blue;
+}
+.gray {
+    	color: gray;
+}
+.orange {
+    	color: orange;
+}
+.navy {
+    	color: navy;
+}
+.center,#center {
+    	width: 100%;
+    	text-align: center;
+}
+
+.sampledata {
+    	background: none repeat scroll 0 0 #8DB8FF;
+    	font-family: Monospace;
+    	font-size: 18px;
+	line-height: 2px;
+    	white-space: pre;
+}
+.menu {
+    	height: 40px;
+    	position: static;
+    	text-align: center;
+    	visibility: visible;
+    	width: 100%;
+    	border: 1px solid #1a5cc8;
+    	background-color: #ffffff;
+}
+.menu a {
+    	font-size: 18px;
+    	color: #1a5cc8;
+    	text-decoration: none;
+}
+.menu a:hover {
+    	font-size: 18px;
+    	color: #f7941e;
+    	text-decoration: underline;
+}
+
+.broadcast {
+    	font-size: 16px;
+    	color: red;
+    	width: 90%;
+    	position: relative;    
+}
+.foot {
+    	font-size: 16px;
+    	position: static;
+    	text-align: center;
+    	visibility: visible;
+    	width: 100%;
+    	line-height: 24px;
+}
+.admin td{
+    	padding-left: 10px;
+}
+.homelink td{
+    	border: 1px dashed #d2d2d2;
+}
