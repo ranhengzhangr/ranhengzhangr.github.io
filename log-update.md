@@ -57,3 +57,7 @@
 #### 2020-7-11
 
 > 新UI已上线 | ू•ૅω•́)ᵎᵎᵎ
+
+#### 2020-7-16
+
+> 放到Github上面辣，链接[https://ranhengzhangr.github.io/](https://ranhengzhangr.github.io/) | ू•ૅω•́)ᵎᵎᵎ
