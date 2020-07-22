@@ -60,4 +60,12 @@
 
 #### 2020-7-16
 
-> 放到Github上面辣，链接[https://ranhengzhangr.github.io/](https://ranhengzhangr.github.io/) | ू•ૅω•́)ᵎᵎᵎ
+> 放到Github上面辣
+>
+> 网页链接[https://ranhengzhangr.github.io/](https://ranhengzhangr.github.io/) | ू•ૅω•́)ᵎᵎᵎ
+>
+> 仓库链接https://github.com/ranhengzhangr/ranhengzhangr.github.io | ू•ૅω•́)ᵎᵎᵎ
+
+#### 2020-7-22
+
+> 更新了[第二次考试](http://myanswer.club/KS/%E7%AC%AC2%E6%AC%A1%E8%80%83%E8%AF%95/%E7%AC%AC2%E6%AC%A1%E8%80%83%E8%AF%95.html)的题目 | ू•ૅω•́)ᵎᵎᵎ

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!-- saved from url=(0106)http://tsg.hbmzu.edu.cn:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/problem.php?cid=1903&pid=13 -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../img/favicon.ico">
+
+    <title>
+        HBMZUOJ </title>
+
+
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="./Problem_files/bootstrap.min.css">
+
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="./Problem_files/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./Problem_files/hoj.css">
+    <link rel="stylesheet" href="./Problem_files/katex.min.css">
+    <link rel="stylesheet" href="./Problem_files/mathjax.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    	<script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.js"></script>
+    	<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  	<![endif]-->
+    <script language="javascript" type="text/javascript" src="./Problem_files/jquery.min.js.下载"></script>
+</head>
+
+<body>
+    <div class="page">
+        <center>
+            <table style="width:100%;">
+                <tbody>
+                    <tr>
+                        <td style="text-align:left;color:red">Hubei Minzu University Online Judge(程序设计类课程考试)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </center>
+
+        <center>
+            <table class="menu" style="background-color:#e9eef1">
+                <tbody>
+                    <tr>
+                        <td><a href="http://tsg.hbmzu.edu.cn:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/index.php">首页</a></td>
+                        <td><a href="http://tsg.hbmzu.edu.cn:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/exam.php?cid=1903">编程</a></td>
+                        <td><a href="http://tsg.hbmzu.edu.cn:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/select.php?cid=1903">选择</a></td>
+                        <td><a href="http://tsg.hbmzu.edu.cn:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/status.php?cid=1903">状态</a></td>
+                        <td><a href="http://tsg.hbmzu.edu.cn:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/contestrank.php?cid=1903">排名</a></td>
+                        <td><a href="http://tsg.hbmzu.edu.cn:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/conteststatistics.php?cid=1903">统计</a></td>
+                        <td><a href="http://tsg.hbmzu.edu.cn:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/bbs.php?cid=1903">提问</a></td>
+                        <td><a href="http://tsg.hbmzu.edu.cn:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/exam-score.php?cid=1903">成绩</a></td>
+                        <td><a href="http://tsg.hbmzu.edu.cn:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/cheat-check.php?cid=1903">作弊检查</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </center>
+
+        <center>
+            <div class="broadcast">
+                <marquee id="broadcast" scrollamount="2" direction="left" scrolldelay="50" onmouseover="this.stop()" onmouseout="this.start()" ;="">
+                    沉着应考，冷静做题，讨厌作弊！</marquee>
+            </div>
+        </center>
+
+
+
+        <center>
+            <div style="width:90%;text-align:left">
+                <div class="panel-heading">
+                    <center>
+                        <h3>Problem N: 以太网交换机转发数据帧</h3><span class="green">Time Limit: </span>1 Sec &nbsp;&nbsp; <span class="green">Memory Limit: </span>128 MB<br><span class="green">Total Submissions: </span>521 &nbsp;&nbsp; <span class="green">Accepted: </span>270
+                        &nbsp;&nbsp; <span class="green">Creator: </span><span id="creator"><a href="http://tsg.hbmzu.edu.cn:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/userinfo.php?user=tanmj">tanmj</a></span></center>
+                </div>
+                <!--StartMarkForVirtualJudge-->
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Problem Description</div>
+                    <div class="panel-body content">以太网交换机实质上就是一个多端口的网桥。网桥工作在数据链路层，根据MAC帧的目的地址对收到的帧进行转发或过滤。<br> 当网桥收到一个帧时，并不是向所有的端口转发此帧，而是根据此帧的目的MAC地址，查找网桥中的MAC地址表，然后确定将该帧转发到哪一个端口，或把它丢弃（即过滤）。
+                        <br> 以太网交换机转发帧的步骤：
+                        <br> 先查找交换机的MAC地址表中与收到帧的目的地址有无相匹配的项目。
+                        <br> 如没有，则向所有其他端口（进入的端口除外）转发；
+                        <br> 如有，则按MAC地址表中给出的端口进行转发（若MAC地址表中给出的端口就是该帧进入交换机的端口，则应丢弃这个帧）。
+                        <br> 现假设有一个24端口的以太网交换机，你的任务是编写程序对收到的MAC帧进行处理。
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Input Description</div>
+                    <div class="panel-body content">输入的第一行为两个正整数M、N（M、N&lt;=24），分别表示交换机的MAC地址表有M行，有N个MAC帧进入交换机。<br> 然后就是M行的MAC地址表，每行包括（MAC地址 &nbsp;对应的端口号 &nbsp;时间），相互之间以空格分隔，其中MAC地址用十六进制表示。<br> 最后N行，每行表示进入交换机的MAC帧相关的信息，包括（目的MAC地址 &nbsp;源MAC地址 &nbsp;进入的端口号 &nbsp;进入的时间），相互之间以空格分隔，其中MAC地址用十六进制表示。<br></div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Output Description</div>
+                    <div class="panel-body content">对于每行输入，输出以太网交换机处理帧的结果。<br> 输出（目的MAC地址 &nbsp;外出端口号），其中目的MAC地址占18位，左对齐，具体格式详见样例输出。<br> 如果是向所有端口转发，端口号输出ALL；如果是过滤了，端口号输出NONE。
+                        <br></div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Sample Input</div>
+                    <div class="panel-body"><pre class="content"><span id="sampleinput" class="sampledata">5 3
+0001.c7ea.e078 20 172
+0009.7c7c.c95e 13 163
+0009.7ced.ddc6 5 122
+0050.0fc3.7770 10 135
+00e0.8fb2.7a69 11 142
+0001.c7ea.e078 0001.646a.1e5c 12 4568
+0001.422b.486b 0009.7ced.ddc6 5 5888
+ffff.ffff.ffff 00e0.8fb2.7a69 11 7600
+</span></pre></div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Sample Output</div>
+                    <div class="panel-body"><pre class="content"><span id="sampleoutput" class="sampledata">0001.c7ea.e078    20
+0001.422b.486b    ALL
+ffff.ffff.ffff    ALL
+</span></pre></div>
+                </div>
+
+
+                <center>
+                    <!--EndMarkForVirtualJudge-->
+                    <div>
+                        [<a href="http://tsg.hbmzu.edu.cn:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/submitpage.php?cid=1903&amp;pid=13&amp;langmask=524286">Submit</a>] &nbsp; [<a href="http://tsg.hbmzu.edu.cn:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/bbs.php?pid=13&amp;cid=1903">Clarification</a>]
+                        &nbsp; [<a href="http://tsg.hbmzu.edu.cn:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/problemstatus.php?id=2213">Status</a>]</div>
+                </center>
+            </div>
+
+            <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+            <script src="./Problem_files/jquery.min.js.下载"></script>
+
+            <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+            <script src="./Problem_files/bootstrap.min.js.下载"></script>
+            <br>
+            <br>
+            <p>
+                Current Online User: <span class="red">2</span></p>
+
+            <center>
+                <table class="foot" style="border:1px solid #1a5cc8">
+                    <tbody>
+                        <tr>
+                            <td>Department of Computer Science and Technology, School of Information Engineering, Hubei Minzu University</td>
+                        </tr>
+                        <tr>
+                            <td>Anything about the Problems, Please Contact Admin: 724217333@qq.com</td>
+                        </tr>
+                        <tr>
+                            <td>GPLv2 licensed by <a href="https://github.com/zhblue/hustoj">HUSTOJ</a> <span id="date">2020</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>
+            <br>
+
+            <script>
+                $(".hint pre").each(function() {
+                    var plus = "<span class='glyphicon glyphicon-plus'>Click</span>";
+                    var content = $(this);
+                    $(this).before(plus);
+                    $(this).prev().click(function() {
+                        content.toggle();
+                    });
+
+                });
+            </script>
+
+            <script>
+                var n = new Date().getFullYear();
+                document.getElementById('date').innerHTML = n;
+            </script>
+        </center>
+    </div>
+
+
+    <script>
+        function phpfm(pid) {
+            //alert(pid);
+            $.post("admin/phpfm.php", {
+                'frame': 3,
+                'pid': pid,
+                'pass': ''
+            }, function(data, status) {
+                if (status == "success") {
+                    document.location.href = "admin/phpfm.php?frame=3&pid=" + pid;
+                }
+            });
+        }
+
+        $(document).ready(function() {
+            $("#creator").load("problem-ajax.php?pid=2213");
+        });
+    </script>
+
+
+
+    <!--not cached-->
+    <div class="xl-chrome-ext-bar" id="xl_chrome_ext_{4DB361DE-01F7-4376-B494-639E489D19ED}" style="display: none;">
+        <div class="xl-chrome-ext-bar__logo"></div>
+
+        <a id="xl_chrome_ext_download" href="javascript:;" class="xl-chrome-ext-bar__option">下载视频</a>
+        <a id="xl_chrome_ext_close" href="javascript:;" class="xl-chrome-ext-bar__close"></a>
+    </div>
+</body>
+
+</html>

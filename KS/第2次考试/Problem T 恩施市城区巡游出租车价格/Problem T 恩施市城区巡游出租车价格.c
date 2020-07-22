@@ -2,34 +2,31 @@
 
 int main (void)
 {
-    int i, n, t, hh, mm, pay, waiting, length;
-    float money, far;
+	int i, k, n, hh, mm, wait, mile, money;
+	float run, pay;
 
-    scanf("%d", &n);
-    for(i = 0; i < n; i++)
-    {
-        scanf("%d:%d %f %d", &hh, &mm, &far, &waiting);
-        length = far * 1000;
-        if(waiting > 5)    waiting -= 5;
-        else    waiting = 0;
-        if (hh >= 6 && hh < 23){
-            money = 5.0;
-            for (t = 2500; t <= length; t += 500)
-            {
-                if (t <= 10000)    money += 1.0;
-                else    money += 1.5;
-            }
-        }
-        else{
-            money = 6.0;
-            for (t = 2500; t <= length; t += 500)
-            {
-                money += 1.5;
-            }
-        }
-        pay = money + waiting * 0.5 + 0.5;
-        printf("%d\n", pay);
-    }
+	scanf("%d", &n);
+	for(i = 0; i < n; i++)
+	{
+		scanf("%d:%d %f %d", &hh, &mm, &run, &wait);
+		mile = run * 1000;
+		if(wait > 5)    wait -= 5;
+		else    wait = 0;
+		if(hh >= 6&&hh < 23){
+			pay = 5.0;
+			for(k = 2500; k <= mile; k += 500)
+			{
+				if(k <= 10000)    pay += 1.0;
+				else    pay += 1.5;
+			}
+		}
+		else{
+			pay = 6.0;
+			for(k = 2500; k <= mile; k += 500)    pay += 1.5;
+		}
+		money = pay + wait * 0.5 + 0.5;
+		printf("%d\n", money);
+	}
 
-    return 0;
+	return 0;
 }

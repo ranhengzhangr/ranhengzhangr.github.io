@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<!-- saved from url=(0106)http://tsg.hbmzu.edu.cn:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/problem.php?cid=1903&pid=18 -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../img/favicon.ico">
+
+    <title>
+        HBMZUOJ </title>
+
+
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="./Problem_files/bootstrap.min.css">
+
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="./Problem_files/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./Problem_files/hoj.css">
+    <link rel="stylesheet" href="./Problem_files/katex.min.css">
+    <link rel="stylesheet" href="./Problem_files/mathjax.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    	<script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.js"></script>
+    	<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  	<![endif]-->
+    <script language="javascript" type="text/javascript" src="./Problem_files/jquery.min.js.下载"></script>
+</head>
+
+<body>
+    <div class="page">
+        <center>
+            <table style="width:100%;">
+                <tbody>
+                    <tr>
+                        <td style="text-align:left;color:red">Hubei Minzu University Online Judge(程序设计类课程考试)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </center>
+
+        <center>
+            <table class="menu" style="background-color:#e9eef1">
+                <tbody>
+                    <tr>
+                        <td><a href="http://tsg.hbmzu.edu.cn:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/index.php">首页</a></td>
+                        <td><a href="http://tsg.hbmzu.edu.cn:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/exam.php?cid=1903">编程</a></td>
+                        <td><a href="http://tsg.hbmzu.edu.cn:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/select.php?cid=1903">选择</a></td>
+                        <td><a href="http://tsg.hbmzu.edu.cn:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/status.php?cid=1903">状态</a></td>
+                        <td><a href="http://tsg.hbmzu.edu.cn:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/contestrank.php?cid=1903">排名</a></td>
+                        <td><a href="http://tsg.hbmzu.edu.cn:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/conteststatistics.php?cid=1903">统计</a></td>
+                        <td><a href="http://tsg.hbmzu.edu.cn:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/bbs.php?cid=1903">提问</a></td>
+                        <td><a href="http://tsg.hbmzu.edu.cn:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/exam-score.php?cid=1903">成绩</a></td>
+                        <td><a href="http://tsg.hbmzu.edu.cn:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/cheat-check.php?cid=1903">作弊检查</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </center>
+
+        <center>
+            <div class="broadcast">
+                <marquee id="broadcast" scrollamount="2" direction="left" scrolldelay="50" onmouseover="this.stop()" onmouseout="this.start()" ;="">
+                    沉着应考，冷静做题，讨厌作弊！</marquee>
+            </div>
+        </center>
+
+
+
+        <center>
+            <div style="width:90%;text-align:left">
+                <div class="panel-heading">
+                    <center>
+                        <h3>Problem S: 超时计时器设置</h3><span class="green">Time Limit: </span>1 Sec &nbsp;&nbsp; <span class="green">Memory Limit: </span>128 MB<br><span class="green">Total Submissions: </span>399 &nbsp;&nbsp; <span class="green">Accepted: </span>265
+                        &nbsp;&nbsp; <span class="green">Creator: </span><span id="creator"><a href="http://tsg.hbmzu.edu.cn:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/userinfo.php?user=2017063">2017063</a></span></center>
+                </div>
+                <!--StartMarkForVirtualJudge-->
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Problem Description</div>
+                    <div class="panel-body content">
+                        <p class="MsoNormal">
+                            运输层的超时计时器的超时重传时间应设置为多大呢？
+                            <br>
+                        </p>
+                        <p class="MsoNormal">
+                            如果把超时重传时间设置得太短，就会引起很多报文段的不必要的重传，使网络负荷增大。<span style="line-height:1.5;">但若把超时重传时间设置得过长，则又使网络的空闲时间增大，降低了传输效率。</span>
+                            <br>
+                        </p>
+                        <p class="MsoNormal">
+                            TCP 采用了一种自适应算法，它记录一个报文段发出的时间，以及收到相应的确认的时间。这两个时间之差就是报文段的往返时间 RTT。<span style="line-height:1.5;">&nbsp;</span>
+                            <br>
+                        </p>
+                        <p class="MsoNormal">
+                            TCP 保留了 RTT 的一个加权平均往返时间 RTTS（这又称为平滑的往返时间）。<span style="line-height:1.5;">&nbsp;</span>
+                            <br>
+                        </p>
+                        <p class="MsoNormal">
+                            第一次测量到 RTT 样本时，RTTS 值就取为所测量到的 RTT 样本值。以后每测量到一个新的 RTT 样本，就按下式重新计算一次 RTTS：
+                            <br>
+                        </p>
+                        <p class="MsoNormal">
+                            新的RTTS=(1- a)*(旧的RTTS)+a*(新的RTT样本)
+                            <br>
+                        </p>
+                        <p class="MsoNormal">
+                            式中，0&lt;=a&lt;1。若a很接近于零，表示 RTT 值更新较慢。若选择a接近于 1，则表示 RTT 值更新较快。
+                            <br>
+                        </p>
+                        <p class="MsoNormal">
+                            RFC 2988 推荐的a值为 1/8，即 0.125。
+                            <br>
+                        </p>
+                        <p class="MsoNormal">
+                            &nbsp;
+                            <br>
+                        </p>
+                        <p class="MsoNormal">
+                            RTO 应略大于上面得出的加权平均往返时间 RTTS。
+                            <br>
+                        </p>
+                        <p class="MsoNormal">
+                            RFC 2988 建议使用下式计算 RTO：<span style="line-height:1.5;">RTO=RTTS+4*RTTD，</span><span style="line-height:1.5;">RTTD 是 RTT 的偏差的加权平均值。</span>
+                            <br>
+                        </p>
+                        <p class="MsoNormal">
+                            RFC 2988 建议这样计算 RTTD：
+                            <br>
+                        </p>
+                        <p class="MsoNormal">
+                            第一次测量时，RTTD 值取为测量到的 RTT 样本值的一半。
+                            <br>
+                        </p>
+                        <p class="MsoNormal">
+                            在以后的测量中，则使用下式计算加权平均的 RTTD：
+                            <br>
+                        </p>
+                        <p class="MsoNormal" align="center" style="text-align:left;">
+                            新的RTTD=(1-b)*(旧的RTTD) +<span style="line-height:1.5;">b*|RTTS-新的RTT样本|</span>
+                            <br> b 是个小于 1 的系数，其推荐值是 1/4，即 0.25。</p>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Input Description</div>
+                    <div class="panel-body content">输入数据有多行，每行为一个正整数，表示测得的往返时间RTT的样本值（第1行为一个TCP连接第一次测量得到的RTT样本）。</div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Output Description</div>
+                    <div class="panel-body content">对于每行输入数据，<span>输出对应的RTO</span>，计算结果保留2位小数。</div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Sample Input</div>
+                    <div class="panel-body"><pre class="content"><span id="sampleinput" class="sampledata">30
+26
+32
+24
+</span></pre></div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:18px">Sample Output</div>
+                    <div class="panel-body"><pre class="content"><span id="sampleoutput" class="sampledata">90.00
+78.00
+68.38
+63.09
+</span></pre></div>
+                </div>
+
+
+                <center>
+                    <!--EndMarkForVirtualJudge-->
+                    <div>
+                        [<a href="http://tsg.hbmzu.edu.cn:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/submitpage.php?cid=1903&amp;pid=18&amp;langmask=524286">Submit</a>] &nbsp; [<a href="http://tsg.hbmzu.edu.cn:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/bbs.php?pid=18&amp;cid=1903">Clarification</a>]
+                        &nbsp; [<a href="http://tsg.hbmzu.edu.cn:8000/rwt/XINGONG_ONLINEJUDGE/http/GIZUCLSXG6YDGMSPGZ3B/problemstatus.php?id=2293">Status</a>]</div>
+                </center>
+            </div>
+
+            <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+            <script src="./Problem_files/jquery.min.js.下载"></script>
+
+            <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+            <script src="./Problem_files/bootstrap.min.js.下载"></script>
+            <br>
+            <br>
+            <p>
+                Current Online User: <span class="red">2</span></p>
+
+            <center>
+                <table class="foot" style="border:1px solid #1a5cc8">
+                    <tbody>
+                        <tr>
+                            <td>Department of Computer Science and Technology, School of Information Engineering, Hubei Minzu University</td>
+                        </tr>
+                        <tr>
+                            <td>Anything about the Problems, Please Contact Admin: 724217333@qq.com</td>
+                        </tr>
+                        <tr>
+                            <td>GPLv2 licensed by <a href="https://github.com/zhblue/hustoj">HUSTOJ</a> <span id="date">2020</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </center>
+            <br>
+
+            <script>
+                $(".hint pre").each(function() {
+                    var plus = "<span class='glyphicon glyphicon-plus'>Click</span>";
+                    var content = $(this);
+                    $(this).before(plus);
+                    $(this).prev().click(function() {
+                        content.toggle();
+                    });
+
+                });
+            </script>
+
+            <script>
+                var n = new Date().getFullYear();
+                document.getElementById('date').innerHTML = n;
+            </script>
+        </center>
+    </div>
+
+
+    <script>
+        function phpfm(pid) {
+            //alert(pid);
+            $.post("admin/phpfm.php", {
+                'frame': 3,
+                'pid': pid,
+                'pass': ''
+            }, function(data, status) {
+                if (status == "success") {
+                    document.location.href = "admin/phpfm.php?frame=3&pid=" + pid;
+                }
+            });
+        }
+
+        $(document).ready(function() {
+            $("#creator").load("problem-ajax.php?pid=2293");
+        });
+    </script>
+
+
+
+    <!--not cached-->
+    <div class="xl-chrome-ext-bar" id="xl_chrome_ext_{4DB361DE-01F7-4376-B494-639E489D19ED}" style="display: none;">
+        <div class="xl-chrome-ext-bar__logo"></div>
+
+        <a id="xl_chrome_ext_download" href="javascript:;" class="xl-chrome-ext-bar__option">下载视频</a>
+        <a id="xl_chrome_ext_close" href="javascript:;" class="xl-chrome-ext-bar__close"></a>
+    </div>
+</body>
+
+</html>

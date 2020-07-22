@@ -5,172 +5,465 @@
 	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<link rel="icon" href="../../img/德利傻.ico">
 	    <title>MYANSWER</title>
-		<style>
-			html {
-				height: 100%;
-				background-image: url("../../img/background.png");
-				background-size: auto;
-				background-repeat: repeat;
-				background-attachment: fixed;
-			}
-			body {
-				padding-top: 100px;
-				padding-bottom: 100px;
-			}
-			#dateTime {
-				margin: auto;
-				text-align: center;
-				width: 250px;
-				font-weight: bold;
-				font-size: 20px;
-				color: #008A99;
-			}
-			#list {
-				margin: auto;
-				width: 80%;
-				background-color: #81CFD8;
-				border-radius: 15px;
-				padding : 25px;
-			}
-			.overall {
-				width: 70%;
-				margin: auto;
-			}
-			.evenrow {
-				background-color: #00B8CC;
-			}
-			.oddsrow {
-				background-color: #3DECFF;
-			}
-			.imge {
-				width: 45px;
-				text-align: center;
-			}
-			.text {
-				font-size: 20px;
-				color: #006773;
-				text-decoration: none;
-			}
-			.code {
-				width: 50px;
-				text-align: center;
-			}
-		</style>
-	</head>
-	 
+		<link rel="stylesheet" href="../../CSS3/default.css">
+    </head>
+	
 	<body>
-	    <script>
-	        Date.prototype.format = function (fmt) {
-	            var o = {
-	                "y+": this.getFullYear, //年
-	                "M+": this.getMonth() + 1, //月份
-	                "d+": this.getDate(), //日
-	                "h+": this.getHours(), //小时
-	                "m+": this.getMinutes(), //分
-	                "s+": this.getSeconds() //秒
-	            };
-	            if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
-	            for (var k in o)
-	                if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
-	            return fmt;
-	        }
-	        setInterval("document.getElementById('dateTime').innerHTML = (new Date()).format('yyyy-MM-dd hh:mm:ss');", 1000);
-	    </script>
-	 
-	    <div id="dateTime"></div>
-		<p><center><h4 style="color: #002622">代码仅供参考<br \>重要的是学习思维模式<br \>好的成绩不是抄出来的</h4><h1 style="color: #002622">请对自己负责!</h1></center></p>
-		<div id="list">
-			<div style="font-size: 20px; text-align: center"><p>题目</p></div>
-			<table class="overall">
-				<tbody>
-					<tr class="evenrow">
-						<td class="imge">
-							<img  src="../../img/德利傻.png" width="40px" alt="">
-						</td>
-						<td class="text">
-							Problem A
-						</td>
-						<td class="text">
-							日期比较
-						</td>
-						<td class="code">
-							<a href="Problem A 日期比较/Problem.html" target="_blank" class="text">题目</a>
-						</td>
-						<td class="code">
-							<a href="Problem A 日期比较/Code.html" target="_blank" class="text">代码</a>
-						</td>
-					</tr>
-					<tr class="oddsrow">
-						<td class="imge">
-							<img  src="../../img/德利傻.png" width="40px" alt="">
-						</td>
-						<td class="text">
-							Problem B
-						</td>
-						<td class="text">
-							二分法求解根号2
-						</td>
-						<td class="code">
-							<a href="Problem B 二分法求解根号2/Problem.html" target="_blank" class="text">题目</a>
-						</td>
-						<td class="code">
-							<a href="Problem B 二分法求解根号2/Code.html" target="_blank" class="text">代码</a>
-						</td>
-					</tr>
-					<tr class="evenrow">
-						<td class="imge">
-							<img  src="../../img/德利傻.png" width="40px" alt="">
-						</td>
-						<td class="text">
-							Problem C
-						</td>
-						<td class="text">
-							查找第k大元素
-						</td>
-						<td class="code">
-							<a href="Problem C 查找第k大元素/Problem.html" target="_blank" class="text">题目</a>
-						</td>
-						<td class="code">
-							<a href="Problem C 查找第k大元素/Code.html" target="_blank" class="text">代码</a>
-						</td>
-					</tr>
-					<tr class="oddsrow">
-						<td class="imge">
-							<img  src="../../img/德利傻.png" width="40px" alt="">
-						</td>
-						<td class="text">
-							Problem D
-						</td>
-						<td class="text">
-							高精度A+B
-						</td>
-						<td class="code">
-							<a href="Problem D 高精度A&B/Problem.html" target="_blank" class="text">题目</a>
-						</td>
-						<td class="code">
-							<a href="Problem D 高精度A&B/Code.html" target="_blank" class="text">代码</a>
-						</td>
-					</tr>
-					<tr class="evenrow">
-						<td class="imge">
-							<img  src="../../img/德利傻.png" width="40px" alt="">
-						</td>
-						<td class="text">
-							Problem E
-						</td>
-						<td class="text">
-							卷积运算
-						</td>
-						<td class="code">
-							<a href="Problem E 卷积运算/Problem.html" target="_blank" class="text">题目</a>
-						</td>
-						<td class="code">
-							<a href="Problem E 卷积运算/Code.html" target="_blank" class="text">代码</a>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-			<div style="font-size: 15px; text-align: center"><p>如遇到Accept以外情况，本网站概不负责:P</p></div>
+	    <script src="../../Javascript/datetime.js"></script>
+	    <div class="screen" id="dateTime"></div>
+		<div class="screen" style="width: 30%">
+			<p><center><h4 style="color: #002600">代码仅供参考&nbsp;<br \>重要的是学习思维模式<br \>好的成绩不是抄出来的</h4><h1 style="color: #002622">请对自己负责!</h1></center></p>
+		</div>
+		<div class="screen" style="width: 61.8%">
+            <div style="font-size: 20px; text-align: center; font-weight: 600">
+                <p>第1次考试</p>
+            </div>
+			<div class="box">
+                <!--A-->
+                <div class="block">
+					<div class="img">
+                        <div class="rank">A</div>
+						<img src="../../img/德利傻.png" alt="">
+                        <div class="name">日期比较</div>
+					</div>
+					<div class="line">
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<a href="./Problem A 数列区间求和/Problem.html" target="_blank">题目</a>
+									</td>
+                                    <td class="add">
+                                        <a href="./Problem A 数列区间求和/Code.html" target="_blank">代码</a>
+                                    </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+                <!--B-->
+                <div class="block">
+					<div class="img">
+                        <div class="rank">B</div>
+						<img src="../../img/德利傻.png" alt="">
+                        <div class="name">二分法求解根号2</div>
+					</div>
+					<div class="line">
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<a href="./Problem B 学生成绩表/Problem.html" target="_blank">题目</a>
+									</td>
+                                    <td class="add">
+                                        <a href="./Problem B 学生成绩表/Code.html" target="_blank">代码</a>
+                                    </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+                <!--C-->
+                <div class="block">
+					<div class="img">
+                        <div class="rank">C</div>
+						<img src="../../img/德利傻.png" alt="">
+                        <div class="name">查找第k大元素</div>
+					</div>
+					<div class="line">
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<a href="./Problem C 判断素数/Problem.html" target="_blank">题目</a>
+									</td>
+                                    <td class="add">
+                                        <a href="./Problem C 判断素数/Code.html" target="_blank">代码</a>
+                                    </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+                <!--D-->
+                <div class="block">
+					<div class="img">
+                        <div class="rank">D</div>
+						<img src="../../img/德利傻.png" alt="">
+                        <div class="name">高精度A+B</div>
+					</div>
+					<div class="line">
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<a href="./Problem D 整数算术运算/Problem.html" target="_blank">题目</a>
+									</td>
+                                    <td class="add">
+                                        <a href="./Problem D 整数算术运算/Code.html" target="_blank">代码</a>
+                                    </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+                <!--E-->
+                <div class="block">
+					<div class="img">
+                        <div class="rank">E</div>
+						<img src="../../img/德利傻.png" alt="">
+                        <div class="name">卷积运算</div>
+					</div>
+					<div class="line">
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<a href="./Problem E 二进制数转换为十进制数/Problem.html" target="_blank">题目</a>
+									</td>
+                                    <td class="add">
+                                        <a href="./Problem E 二进制数转换为十进制数/Code.html" target="_blank">代码</a>
+                                    </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+                <!--F-->
+                <div class="block">
+					<div class="img">
+                        <div class="rank">F</div>
+						<img src="../../img/德利傻.png" alt="">
+                        <div class="name">打印nn乘法口诀表</div>
+					</div>
+					<div class="line">
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<a href="./Problem F 打印nn乘法口诀表/Problem.html" target="_blank">题目</a>
+									</td>
+                                    <td class="add">
+                                        <a href="./Problem F 打印nn乘法口诀表/Code.html" target="_blank">代码</a>
+                                    </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+                <!--G-->
+                <div class="block">
+					<div class="img">
+                        <div class="rank">G</div>
+						<img src="../../img/德利傻.png" alt="">
+                        <div class="name">矩阵乘积</div>
+					</div>
+					<div class="line">
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<a href="./Problem G 矩阵乘积/Problem.html" target="_blank">题目</a>
+									</td>
+                                    <td class="add">
+                                        <a href="./Problem G 矩阵乘积/Code.html" target="_blank">代码</a>
+                                    </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+                <!--H-->
+                <div class="block">
+					<div class="img">
+                        <div class="rank">H</div>
+						<img src="../../img/德利傻.png" alt="">
+                        <div class="name">IP地址转换</div>
+					</div>
+					<div class="line">
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<a href="./Problem H IP地址转换/Problem.html" target="_blank">题目</a>
+									</td>
+                                    <td class="add">
+                                        <a href="./Problem H IP地址转换/Code.html" target="_blank">代码</a>
+                                    </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+                <!--I-->
+                <div class="block">
+					<div class="img">
+                        <div class="rank">I</div>
+						<img src="../../img/德利傻.png" alt="">
+                        <div class="name">矩阵的快速幂</div>
+					</div>
+					<div class="line">
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<a href="./Problem I 矩阵的快速幂/Problem.html" target="_blank">题目</a>
+									</td>
+                                    <td class="add">
+                                        <a href="./Problem I 矩阵的快速幂/Code.html" target="_blank">代码</a>
+                                    </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+                <!--J-->
+                <div class="block">
+					<div class="img">
+                        <div class="rank">J</div>
+						<img src="../../img/德利傻.png" alt="">
+                        <div class="name">计算机阅卷</div>
+					</div>
+					<div class="line">
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<a href="./Problem J 计算机阅卷/Problem.html" target="_blank">题目</a>
+									</td>
+                                    <td class="add">
+                                        <a href="./Problem J 计算机阅卷/Code.html" target="_blank">代码</a>
+                                    </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+                <!--K-->
+                <div class="block">
+					<div class="img">
+                        <div class="rank">K</div>
+						<img src="../../img/德利傻.png" alt="">
+                        <div class="name">单词查找</div>
+					</div>
+					<div class="line">
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<a href="./Problem K 单词查找/Problem.html" target="_blank">题目</a>
+									</td>
+                                    <td class="add">
+                                        <a href="./Problem K 单词查找/Code.html" target="_blank">代码</a>
+                                    </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+                <!--L-->
+                <div class="block">
+					<div class="img">
+                        <div class="rank">L</div>
+						<img src="../../img/德利傻.png" alt="">
+                        <div class="name">循环冗余检验CRC</div>
+					</div>
+					<div class="line">
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<a href="./Problem L 循环冗余检验CRC/Problem.html" target="_blank">题目</a>
+									</td>
+                                    <td class="add">
+                                        <a href="./Problem L 循环冗余检验CRC/Code.html" target="_blank">代码</a>
+                                    </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+                <!--M-->
+                <div class="block">
+					<div class="img">
+                        <div class="rank">M</div>
+						<img src="../../img/德利傻.png" alt="">
+                        <div class="name">以太网交换机的自学习算法</div>
+					</div>
+					<div class="line">
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<a href="./Problem M 以太网交换机的自学习算法/Problem.html" target="_blank">题目</a>
+									</td>
+                                    <td class="add">
+                                        <a href="./Problem M 以太网交换机的自学习算法/Code.html" target="_blank">代码</a>
+                                    </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+                <!--N-->
+                <div class="block">
+					<div class="img">
+                        <div class="rank">N</div>
+						<img src="../../img/德利傻.png" alt="">
+                        <div class="name">以太网交换机转发数据帧</div>
+					</div>
+					<div class="line">
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<a href="./Problem N 以太网交换机转发数据帧/Problem.html" target="_blank">题目</a>
+									</td>
+                                    <td class="add">
+                                        <a href="./Problem N 以太网交换机转发数据帧/Code.html" target="_blank">代码</a>
+                                    </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+                <!--O-->
+                <div class="block">
+					<div class="img">
+                        <div class="rank">O</div>
+						<img src="../../img/德利傻.png" alt="">
+                        <div class="name">IP地址合法性和网络类别检查</div>
+					</div>
+					<div class="line">
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<a href="./Problem O IP地址合法性和网络类别检查/Problem.html" target="_blank">题目</a>
+									</td>
+                                    <td class="add">
+                                        <a href="./Problem O IP地址合法性和网络类别检查/Code.html" target="_blank">代码</a>
+                                    </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+                <!--P-->
+                <div class="block">
+					<div class="img">
+                        <div class="rank">P</div>
+						<img src="../../img/德利傻.png" alt="">
+                        <div class="name">计算网络地址</div>
+					</div>
+					<div class="line">
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<a href="./Problem P 计算网络地址/Problem.html" target="_blank">题目</a>
+									</td>
+                                    <td class="add">
+                                        <a href="./Problem P 计算网络地址/Code.html" target="_blank">代码</a>
+                                    </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+                <!--Q-->
+                <div class="block">
+					<div class="img">
+                        <div class="rank">Q</div>
+						<img src="../../img/德利傻.png" alt="">
+                        <div class="name">计算地址掩码和地址数</div>
+					</div>
+					<div class="line">
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<a href="./Problem Q 计算地址掩码和地址数/Problem.html" target="_blank">题目</a>
+									</td>
+                                    <td class="add">
+                                        <a href="./Problem Q 计算地址掩码和地址数/Code.html" target="_blank">代码</a>
+                                    </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+                <!--R-->
+                <div class="block">
+					<div class="img">
+                        <div class="rank">R</div>
+						<img src="../../img/德利傻.png" alt="">
+                        <div class="name">距离向量算法（D-V）</div>
+					</div>
+					<div class="line">
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<a href="./Problem R 距离向量算法（D-V）/Problem.html" target="_blank">题目</a>
+									</td>
+                                    <td class="add">
+                                        <a href="./Problem R 距离向量算法（D-V）/Code.html" target="_blank">代码</a>
+                                    </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+                <!--S-->
+                <div class="block">
+					<div class="img">
+                        <div class="rank">S</div>
+						<img src="../../img/德利傻.png" alt="">
+                        <div class="name">超时计时器设置</div>
+					</div>
+					<div class="line">
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<a href="./Problem S 超时计时器设置/Problem.html" target="_blank">题目</a>
+									</td>
+                                    <td class="add">
+                                        <a href="./Problem S 超时计时器设置/Code.html" target="_blank">代码</a>
+                                    </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+                <!--T-->
+                <div class="block">
+					<div class="img">
+                        <div class="rank">T</div>
+						<img src="../../img/德利傻.png" alt="">
+                        <div class="name">恩施市城区巡游出租车价格</div>
+					</div>
+					<div class="line">
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<a href="./Problem T 恩施市城区巡游出租车价格/Problem.html" target="_blank">题目</a>
+									</td>
+                                    <td class="add">
+                                        <a href="./Problem T 恩施市城区巡游出租车价格/Code.html" target="_blank">代码</a>
+                                    </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+            </div>
+			<div style="font-size: 15px; text-align: center">
+				<p>如遇到Accept以外情况，本网站概不负责:P</p>
+			</div>
 		</div>
 	</body>
+    <img class="fish" src="../../img/touch_fish.png" alt="">
 </html>
